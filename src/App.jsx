@@ -19,6 +19,7 @@ import Registration from "./components/auth/Registration";
 import Profile from "./components/auth/Profile";
 import { AuthProvider } from "./components/auth/AuthProvider";
 import RequireAuth from "./components/auth/RequireAuth";
+import BookingFailure from "./components/booking/BookingFailure";
 
 function App() {
   return (
@@ -44,6 +45,8 @@ function App() {
 
             <Route path="/admin" element={<Admin />} />
             <Route path="/booking-success" element={<BookingSuccess />} />
+            <Route path="/booking-failure" element={<BookingFailure />} />
+
             <Route path="/existing-bookings" element={<Bookings />} />
             <Route path="/find-booking" element={<FindBooking />} />
 
