@@ -214,3 +214,4 @@ export async function getBookingsByUserId(userId, token) {
 		throw new Error("Failed to fetch bookings")
 	}
 }
+

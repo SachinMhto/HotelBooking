@@ -20,6 +20,9 @@ import Profile from "./components/auth/Profile";
 import { AuthProvider } from "./components/auth/AuthProvider";
 import RequireAuth from "./components/auth/RequireAuth";
 import BookingFailure from "./components/booking/BookingFailure";
+import FeedbackForm from "./components/feedback/FeedbackForm";
+import Feedback from "./components/feedback/Feedback";
+import Thank from "./components/feedback/Thank";
 
 function App() {
   return (
@@ -55,6 +58,9 @@ function App() {
 
             <Route path="/profile" element={<Profile />} />
             <Route path="/logout" element={<FindBooking />} />
+            <Route path="/feedback" element={<FeedbackForm />} />
+            <Route path="/feedbackform" element={<Feedback />} />
+            <Route path="/thankyou" element={<Thank />} />
           </Routes>
         </Router>
         <Footer />

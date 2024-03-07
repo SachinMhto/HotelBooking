@@ -101,7 +101,7 @@ const BookingForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ confirmationCode, roomId, booking }), // Include confirmationCode in the request body
+        body: JSON.stringify({ confirmationCode, roomId, booking }),
       });
     } catch (error) {
       const errorMessage = error.message;
